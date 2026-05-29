@@ -1,1 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal do Direito e Cidadania</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, Arial, sans-serif;
+        }
 
+        body {
+            background-color: #f4f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #1a252f;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 4px solid #c5a059; /* Tom dourado/bronze clássico do Direito */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 5px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-style: italic;
+            color: #bdc3c7;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background-color: #2c3e50;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #c5a059;
+            color: #1a252f;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Conteúdo Principal */
+        main {
+            flex: 3;
+            background: #fff;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        main h2 {
+            color: #1a252f;
+            margin-bottom: 15px;
+            border-left: 5px solid #c5a059;
+            padding-left: 10px;
+        }
+
+        main p {
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        /* Barra Lateral (Sidebar) */
+        aside {
+            flex: 1;
+            min-width: 250px;
+            background: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            height: fit-content;
+        }
+
+        aside h3 {
+            color: #c5a059;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #455a64;
+            padding-bottom: 5px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            margin-bottom: 10px;
+        }
+
+        aside ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        aside ul li a:hover {
+            color: #c5a059;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a252f;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            border-top: 4px solid #c5a059;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            aside {
+                flex: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Iustitia & Direito</h1>
+        <p>A serviço da justiça, da ordem e da cidadania</p>
+    </header>
+
+    <nav>
+        <a href="#introducao">Introdução</a>
+        <a href="#ramos">Ramos do Direito</a>
+        <a href="#importancia">Importância</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="container">
+        
+        <main>
+            <section id="introducao">
+                <h2>O que é o Direito?</h2>
+                <p>O Direito é o conjunto de normas executórias que regem as relações dos homens na sociedade. A palavra deriva do latim <em>directum</em>, que significa aquilo que é reto, que está de acordo com a lei, a justiça e a razão. Sua principal função é organizar a sociedade, harmonizar as relações humanas e garantir a pacificação social por meio da resolução de conflitos.</p>
+            </section>
+
+            <section id="ramos">
+                <h2>Os Principais Ramos do Direito</h2>
+                <p>O ordenamento jurídico é amplo e costuma ser dividido em duas grandes esferas para fins didáticos e práticos: o Direito Público e o Direito Privado. Dentro delas, destacam-se:</p>
+                
+                <ul>
+                    <li><strong>Direito Civil:</strong> Regula as relações entre particulares (família, propriedade, contratos e sucessões).</li>
+                    <li><strong>Direito Penal:</strong> Define os crimes e estabelece as penalidades aplicáveis aos infratores.</li>
+                    <li><strong>Direito Constitucional:</strong> Analisa e interpreta a Constituição Federal, organizando os poderes do Estado e garantindo os direitos fundamentais.</li>
+                    <li><strong>Direito do Trabalho:</strong> Rege as relações jurídicas entre empregados e empregadores.</li>
+                </ul>
+                <br>
+            </section>
+
+            <section id="importancia">
+                <h2>A Importância da Justiça</h2>
+                <p>Sem as regras do Direito, a sociedade viveria em um estado de caos, onde a força bruta prevaleceria sobre a razão. As leis existem para proteger os mais vulneráveis, limitar o poder do Estado, garantir a liberdade individual e assegurar que todos tenham direito a um julgamento justo e imparcial.</p>
+            </section>
+        </main>
+
+        <aside>
+            <h3>Links Úteis</h3>
+            <ul>
+                <li><a href="#">• Supremo Tribunal Federal</a></li>
+                <li><a href="#">• Conselhos de Justiça</a></li>
+                <li><a href="#">• Código Civil Brasileiro</a></li>
+                <li><a href="#">• Constituição Federal</a></li>
+            </ul>
+            <br>
+            <h3>Frase do Dia</h3>
+            <p style="font-style: italic; font-size: 0.9rem; color: #bdc3c7;">
+                "A justiça é a constante e firme vontade de dar a cada um o que é seu." <br>— Ulpiano
+            </p>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Portal Iustitia & Direito. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
