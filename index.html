@@ -89,6 +89,26 @@
             text-align: justify;
         }
 
+        /* Container para deixar o Vídeo Responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         /* Barra Lateral (Sidebar) */
         aside {
             flex: 1;
@@ -156,9 +176,9 @@
 
     <nav>
         <a href="#introducao">Introdução</a>
+        <a href="#video">Conteúdo em Vídeo</a>
         <a href="#ramos">Ramos do Direito</a>
         <a href="#importancia">Importância</a>
-        <a href="#contato">Contato</a>
     </nav>
 
     <div class="container">
@@ -167,6 +187,13 @@
             <section id="introducao">
                 <h2>O que é o Direito?</h2>
                 <p>O Direito é o conjunto de normas executórias que regem as relações dos homens na sociedade. A palavra deriva do latim <em>directum</em>, que significa aquilo que é reto, que está de acordo com a lei, a justiça e a razão. Sua principal função é organizar a sociedade, harmonizar as relações humanas e garantir a pacificação social por meio da resolução de conflitos.</p>
+            </section>
+
+            <section id="video">
+                <h2>Análise Jurídica em Destaque</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0V1m1UXR0-4?si=QVxQ_FtYXDVwYFrB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </section>
 
             <section id="ramos">
